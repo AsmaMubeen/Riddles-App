@@ -3,3 +3,7 @@ requests
 gunicorn
 
 # add new packages one per each line
+
+wit
+python_dotenv
+bs4

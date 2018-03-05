@@ -23,6 +23,11 @@ items:
           env:
           - name: PRODUCTION
             value: "true"
+          - name: ACCESS_TOKEN
+            valueFrom:
+               secretKeyRef:
+                  name: hasura-secrets
+                  key: wit.token.key
           - name: CLUSTER_NAME 
             value: {{ cluster.name }}
           imagePullPolicy: IfNotPresent
